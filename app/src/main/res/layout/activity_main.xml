@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -13,17 +13,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".ui.main.MainActivity">
 
         <TextView
             style="@style/label_titulo"
             android:text="@string/label_dado_cliente" />
 
-        <EditText
+        <TextView
+            android:id="@+id/tvNome"
             style="@style/margin_lateral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_nome_cliente" />
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            tools:hint="@string/hint_nome_cliente" />
 
         <TextView
             android:layout_width="match_parent"
